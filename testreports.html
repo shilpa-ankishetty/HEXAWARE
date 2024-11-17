@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Reports</title>
+  <link rel="stylesheet" href="testreports.css">
+</head>
+<body>
+  <div class="test-reports-section">
+    <h2>📊 Test Performance Reports</h2>
+    <p>Review your recent test reports, analyze scores, and track your progress over time.</p>
+    <div class="controls">
+      <input type="text" id="searchBar" placeholder="🔍 Search reports..." oninput="filterReports()">
+      <select id="filterType" onchange="filterReports()">
+        <option value="">All Types</option>
+        <option value="Vocabulary">Vocabulary</option>
+        <option value="Speech">Speech</option>
+        <option value="Pronunciation">Pronunciation</option>
+      </select>
+      <input type="date" id="filterDate" onchange="filterReports()">
+    </div>
+    <ul id="reportList">
+      <!-- Report items will be dynamically added here -->
+    </ul>
+  </div>
+
+  <!-- Enhanced Modal for Detailed Report -->
+  <div id="reportModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDate" class="modal-date"></p>
+      </div>
+      <div class="modal-body">
+        <div class="report-type" id="modalType"></div>
+        <p id="modalDetails"></p>
+        <div class="progress">
+          <p>Score: <span id="modalScore"></span></p>
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="testreports.js"></script>
+</body>
+</html>
+<!-- Modal content -->
+<div id="reportModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalDate"></p>
+    <p id="modalType"></p>
+    <p id="modalDetails"></p>
+    <p id="modalScore"></p>
+    <div class="progress-bar" id="progressBar"></div>
+    <!-- New element for AI insights -->
+    <p id="modalAIInsights" class="ai-insights"></p>
+  </div>
+</div>

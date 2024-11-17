@@ -1,0 +1,26 @@
+{
+    "lessons": [
+        {
+            "title": "Basic Everyday Vocabulary",
+            "description": "Learn essential words for everyday situations, including greetings, common objects, and simple actions.",
+            "duration": "30 minutes",
+            "key_vocabulary": ["hello", "goodbye", "please", "thank you"],
+            "content": "<p>This lesson covers basic greetings and common expressions.</p>"
+        },
+        {
+            "title": "Adjectives for Beginners",
+            "description": "Discover basic adjectives to describe people, places, and things.",
+            "duration": "20 minutes",
+            "key_vocabulary": ["big", "small", "beautiful", "ugly"],
+            "content": "<p>This lesson focuses on common adjectives and their usage.</p>"
+        },
+        {
+            "title": "Food Vocabulary",
+            "description": "Learn the names of various foods, including fruits, vegetables, and common dishes.",
+            "duration": "25 minutes",
+            "key_vocabulary": ["apple", "bread", "rice", "chicken"],
+            "content": "<p>This lesson introduces vocabulary related to food items.</p>"
+        }
+        
+    ]
+}

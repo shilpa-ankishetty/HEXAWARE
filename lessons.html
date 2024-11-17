@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Lesson</title>
+    <link rel="stylesheet" href="lessons.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="lesson-title">Lesson Title Goes Here</h1>
+        
+        <audio id="lesson-audio" controls>
+            <source src="#" type="audio/mpeg"> <!-- Audio source will be set by JavaScript -->
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Description</h3>
+        <p id="lesson-description">Lesson description goes here.</p>
+
+        <h3>Learning Objectives</h3>
+        <ul id="learning-objectives">
+            <!-- Objectives will be populated by JavaScript -->
+        </ul>
+
+        <h3>Practice Questions</h3>
+        <div id="quiz-section">
+            <!-- Practice questions will be populated by JavaScript -->
+        </div>
+
+        <button onclick="goBack()">Back to Lessons</button>
+    </div>
+
+    <script src="lessons.js"></script>
+</body>
+</html>

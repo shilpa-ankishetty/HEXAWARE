@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="practicetest.css">
+    <title>Practice Tests</title>
+</head>
+<body>
+    <div class="practice-tests-section">
+        <h2>Practice Tests</h2>
+        <input type="text" id="searchBar" placeholder="Search tests..." />
+
+        <div class="filter-options">
+            <label for="testType">Filter by Type:</label>
+            <select id="testType">
+                <option value="all">All</option>
+                <option value="vocabulary">Vocabulary</option>
+                <option value="speech">Speech</option>
+                <option value="pronunciation">Pronunciation</option>
+            </select>
+        </div>
+
+        <ul id="testList">
+            <!-- Test items will be populated by JavaScript -->
+        </ul>
+    </div>
+
+    <script src="practicetest.js"></script>
+</body>
+</html>

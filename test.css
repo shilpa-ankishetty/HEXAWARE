@@ -1,0 +1,69 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef1f6; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Test Section Styles */
+.test-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff; /* White background for the section */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.test-section:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Hover effect */
+}
+
+h2 {
+    text-align: center;
+    color: #007BFF; /* Blue color for the title */
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Question Styles */
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Slightly darker grey background */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.question:hover {
+    background-color: #e9ecef; /* Light grey on hover */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Submit Button Styles */
+#submitTest {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#submitTest:hover {
+    background-color: #218838; /* Darker green */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    margin-right: 10px;
+}

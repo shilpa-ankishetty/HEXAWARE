@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="lesson-details">
+        <h2 id="lesson-title"></h2>
+        <p id="lesson-description"></p>
+        <p id="lesson-duration"></p>
+        <p id="lesson-key-vocabulary"></p>
+        <div id="lesson-content"></div>
+        <button onclick="goBack()">Back to Vocabulary Lessons</button>
+    </div>
+
+    <script>
+        // Temporary lesson data (mocked)
+        const currentLesson = {
+            title: "Basic Everyday Vocabulary",
+            description: "Learn essential words for everyday situations, including greetings, common objects, and simple actions.",
+            duration: "30 minutes",
+            key_vocabulary: ["hello", "goodbye", "please", "thank you"],
+            content: "<p>This is where the lesson content goes.</p>"
+        };
+
+        // Populate the lesson details
+        document.getElementById('lesson-title').innerText = currentLesson.title;
+        document.getElementById('lesson-description').innerText = currentLesson.description;
+        document.getElementById('lesson-duration').innerText = `Duration: ${currentLesson.duration}`;
+        document.getElementById('lesson-key-vocabulary').innerHTML = 
+            `<strong>Key Vocabulary:</strong> ${currentLesson.key_vocabulary.join(', ')}`;
+        document.getElementById('lesson-content').innerHTML = currentLesson.content;
+
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+    </script>
+</body>
+</html>

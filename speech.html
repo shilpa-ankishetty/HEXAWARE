@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Lessons</title>
+    <link rel="stylesheet" href="speech.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Speech Lessons</h1>
+        <p class="intro-text">Master public speaking, persuasive communication, and storytelling skills with step-by-step lessons.</p>
+
+        <!-- Skill Progress Tracker -->
+        <div class="progress-tracker">
+            <h3>Your Progress</h3>
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" style="width: 30%;">30%</div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <input type="text" id="speech-search" placeholder="Search Speech Lessons" oninput="searchSpeech()">
+
+        <!-- Lesson Difficulty Filter -->
+        <select id="difficulty" onchange="filterByDifficulty()">
+            <option value="">All Levels</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+
+        <!-- Lesson Cards -->
+        <div class="lesson-list" id="lesson-list">
+            <!-- Beginner Lessons -->
+            <div class="lesson-card beginner">
+                <h2>Lesson 1: Public Speaking Basics</h2>
+                <p>Develop confidence and learn the foundations of effective public speaking.</p>
+                <video controls>
+                    <source src="videos/public_speaking_basics.mp4" type="video/mp4">
+                </video>
+                <button onclick="startLesson('Public Speaking Basics')">Start Lesson</button>
+            </div>
+            <div class="lesson-card beginner">
+                <h2>Lesson 2: Overcoming Stage Fright</h2>
+                <p>Learn techniques to manage anxiety and deliver with confidence.</p>
+                <video controls>
+                    <source src="videos/public_speaking_basics.mp4" type="video/mp4">
+                </video>
+                <button onclick="startLesson('Overcoming Stage Fright')">Start Lesson</button>
+            </div>
+
+            <!-- Intermediate Lessons -->
+            <div class="lesson-card hidden intermediate">
+                <h2>Lesson 3: Persuasive Speech Techniques</h2>
+                <p>Explore essential techniques to persuade an audience effectively.</p>
+                <video controls>
+                    <source src="videos/public_speaking_basics.mp4" type="video/mp4">
+                </video>
+                <button onclick="startLesson('Persuasive Speech Techniques')">Start Lesson</button>
+            </div>
+            <div class="lesson-card hidden intermediate">
+                <h2>Lesson 4: Crafting Effective Arguments</h2>
+                <p>Learn how to structure your arguments for maximum impact.</p>
+                <video controls>
+                    <source src="videos/public_speaking_basics.mp4" type="video/mp4">
+                </video>
+                <button onclick="startLesson('Crafting Effective Arguments')">Start Lesson</button>
+            </div>
+
+            <!-- Advanced Lessons -->
+            <div class="lesson-card hidden advanced">
+                <h2>Lesson 5: Storytelling Skills</h2>
+                <p>Learn how to captivate an audience with engaging stories.</p>
+                <video controls>
+                    <source src="videos/public_speaking_basics.mp4" type="video/mp4">
+                </video>
+                <button onclick="startLesson('Storytelling Skills')">Start Lesson</button>
+            </div>
+            <div class="lesson-card hidden advanced">
+                <h2>Lesson 6: Advanced Persuasion Techniques</h2>
+                <p>Master advanced strategies to influence and persuade.</p>
+                <video controls>
+                    <source src="videos/public_speaking_basics.mp4" type="video/mp4">
+                </video>
+                <button onclick="startLesson('Advanced Persuasion Techniques')">Start Lesson</button>
+            </div>
+        </div>
+    </div>
+    <script src="speech.js"></script>
+</body>
+</html>

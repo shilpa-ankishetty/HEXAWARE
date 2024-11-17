@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Lessons</title>
+    <link rel="stylesheet" href="vocabulary.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vocabulary Lessons</h1>
+        </header>
+        
+        <div class="search-filter">
+            <input type="text" id="vocabulary-search" placeholder="Search Vocabulary Lessons" oninput="searchVocabularyLessons()">
+            <select id="vocabulary-filter" onchange="filterVocabularyLessons()">
+                <option value="all">All Levels</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div class="lesson-grid">
+            <!-- Beginner Lessons -->
+            <div class="lesson-card" data-level="beginner">
+                <img src="C:\Users\rajib\Downloads\List-of-Basic-Words-in-English.png" alt="Basic Everyday Vocabulary" class="lesson-image">
+                <h3>Basic Everyday Vocabulary</h3>
+                <p>Learn essential words for everyday situations, including greetings, common objects, and simple actions.</p>
+                <button onclick="startLesson('Basic Everyday Vocabulary')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="beginner">
+                <img src="images/vocabulary-beginner.jpg" alt="Adjectives for Beginners" class="lesson-image">
+                <h3>Adjectives for Beginners</h3>
+                <p>Discover basic adjectives to describe people, places, and things.</p>
+                <button onclick="startLesson('Adjectives for Beginners')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="beginner">
+                <img src="C:\Users\rajib\Downloads\WhatsApp Image 2024-10-27 at 11.45.31_941c316f.jpg" alt="Food Vocabulary" class="lesson-image">
+                <h3>Food Vocabulary</h3>
+                <p>Learn the names of various foods, including fruits, vegetables, and common dishes.</p>
+                <button onclick="startLesson('Food Vocabulary')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="beginner">
+                <img src="images/vocabulary-colors.jpg" alt="Colors Vocabulary" class="lesson-image">
+                <h3>Colors Vocabulary</h3>
+                <p>Understand the different colors and how to use them in descriptions.</p>
+                <button onclick="startLesson('Colors Vocabulary')">Start Lesson</button>
+            </div>
+
+            <!-- Intermediate Lessons -->
+            <div class="lesson-card" data-level="intermediate">
+                <img src="images/vocabulary-intermediate.jpg" alt="Vocabulary for Work" class="lesson-image">
+                <h3>Vocabulary for Work</h3>
+                <p>Explore vocabulary related to the workplace, including job titles, tasks, and office equipment.</p>
+                <button onclick="startLesson('Vocabulary for Work')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="intermediate">
+                <img src="images/vocabulary-intermediate.jpg" alt="Social Interaction Vocabulary" class="lesson-image">
+                <h3>Social Interaction Vocabulary</h3>
+                <p>Learn phrases and words used in common social scenarios, such as parties and gatherings.</p>
+                <button onclick="startLesson('Social Interaction Vocabulary')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="intermediate">
+                <img src="images/vocabulary-travel.jpg" alt="Travel Vocabulary" class="lesson-image">
+                <h3>Travel Vocabulary</h3>
+                <p>Get familiar with terms and phrases useful for traveling, including directions, accommodations, and transportation.</p>
+                <button onclick="startLesson('Travel Vocabulary')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="intermediate">
+                <img src="images/vocabulary-hobbies.jpg" alt="Hobbies Vocabulary" class="lesson-image">
+                <h3>Hobbies Vocabulary</h3>
+                <p>Discover vocabulary related to various hobbies, including sports, arts, and crafts.</p>
+                <button onclick="startLesson('Hobbies Vocabulary')">Start Lesson</button>
+            </div>
+
+            <!-- Advanced Lessons -->
+            <div class="lesson-card" data-level="advanced">
+                <img src="images/vocabulary-advanced.jpg" alt="Academic Vocabulary" class="lesson-image">
+                <h3>Academic Vocabulary</h3>
+                <p>Enhance your vocabulary with academic terms commonly used in essays and research.</p>
+                <button onclick="startLesson('Academic Vocabulary')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="advanced">
+                <img src="images/vocabulary-advanced.jpg" alt="Idiomatic Expressions" class="lesson-image">
+                <h3>Idiomatic Expressions</h3>
+                <p>Dive into idioms and phrases that add color to your language and are used by native speakers.</p>
+                <button onclick="startLesson('Idiomatic Expressions')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="advanced">
+                <img src="images/vocabulary-advanced.jpg" alt="Business Vocabulary" class="lesson-image">
+                <h3>Business Vocabulary</h3>
+                <p>Learn key terms used in business contexts, including finance, marketing, and management.</p>
+                <button onclick="startLesson('Business Vocabulary')">Start Lesson</button>
+            </div>
+            <div class="lesson-card" data-level="advanced">
+                <img src="images/vocabulary-advanced.jpg" alt="Technical Vocabulary" class="lesson-image">
+                <h3>Technical Vocabulary</h3>
+                <p>Understand vocabulary used in various technical fields, including engineering, IT, and science.</p>
+                <button onclick="startLesson('Technical Vocabulary')">Start Lesson</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for displaying lesson content -->
+    <div id="lesson-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="lesson-title"></h2>
+            <p id="lesson-description"></p>
+            <p id="lesson-duration"></p>
+            <p id="lesson-key-vocabulary"></p>
+        </div>
+    </div>
+    
+
+    <script src="vocabulary.js"></script>
+</body>
+</html>

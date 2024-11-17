@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronunciation Lessons</title>
+    <link rel="stylesheet" href="prounication.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pronunciation Lessons</h1>
+        <p class="intro-text">Enhance your pronunciation with structured lessons across Beginner, Intermediate, and Advanced levels.</p>
+
+        <!-- Search Bar and Filter Options -->
+        <div class="search-filter">
+            <input type="text" id="pronunciation-search" placeholder="Search Pronunciation Lessons" oninput="searchPronunciation()">
+            <select id="pronunciation-filter" onchange="filterPronunciation()">
+                <option value="all">All Levels</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <!-- Lesson List -->
+        <div id="pronunciation-lesson-list" class="lesson-list">
+            <div class="lesson-card beginner">
+                <h2>Lesson 1: Basic Sounds</h2>
+                <p>Learn the basic sounds and phonetics to improve clarity.</p>
+                <button onclick="location.href='lessons.html'">Start Learning</button>
+                
+            </div>
+            <div class="lesson-card intermediate hidden">
+                <h2>Lesson 2: Consonant Clusters</h2>
+                <p>Master the pronunciation of complex consonant sounds.</p>
+                <button onclick="startLesson('Consonant Clusters')">Start Lesson</button>
+            </div>
+            <div class="lesson-card advanced hidden">
+                <h2>Lesson 3: Advanced Intonation Patterns</h2>
+                <p>Enhance your fluency with advanced intonation and stress patterns.</p>
+                <button onclick="startLesson('Advanced Intonation Patterns')">Start Lesson</button>
+            </div>
+        </div>
+    </div>
+    <script src="prounication.js"></script>
+</body>
+</html>
